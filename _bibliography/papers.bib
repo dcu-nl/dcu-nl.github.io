@@ -1,14 +1,275 @@
 ---
 ---
 
-@article{example2024dosimetry,
-  author    = {Author, First and Author, Second},
-  title     = {Example Publication Title},
-  journal   = {Journal of Nuclear Medicine},
-  year      = {2024},
-  volume    = {65},
-  number    = {1},
-  pages     = {1--10},
-  doi       = {10.xxxx/example},
-  abstract  = {Add abstract text here.}
+@article{CHATZIPAPAS202570089,
+author = {Chatzipapas, Konstantinos P. and Papachristou, Konstantinos and Visvikis, Dimitris and Incerti, Sebastien and Hazle, John D. and Kagadis, George C.},
+title = {In silico assessment of cellular damage from Lu-177, Ac-225, and Pb-212 therapeutic radionuclides},
+journal = {Medical Physics},
+volume = {52},
+number = {11},
+year = {2025},
+month = {Oct},
+pages = {e70089},
+keywords = {dosimetry, Geant4-DNA, molecular radiotherapy, Monte Carlo simulations, radionuclide therapy},
+doi = {https://doi.org/10.1002/mp.70089},
+url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.70089},
+eprint = {https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.70089},
+abstract = {Background 
+            Targeted radionuclide therapy (TRT) has emerged as a unique and effective treatment modality for cancer. Monte Carlo simulations have greatly advanced investigations into radiation-caused DNA damage, including the complexity of this damage. 
+            Purpose 
+            This study aimed to evaluate DNA damage induced by high-linear energy transfer therapeutic radionuclides used in TRT, specifically Ac-225, Lu-177, and Pb-212, using Geant4-DNA Monte Carlo simulations. 
+            Methods 
+            The Geant4-DNA toolkit, incorporating the molecularDNA example, was employed to simulate radiation interactions within a human fibroblast cell model featuring a fractal chromatin fiber geometry within an ellipsoidal nucleus. Three source geometries (membrane, cytoplasm, nucleus) were modeled to assess the impact of radionuclide localization. Key metrics, including absorbed dose, double-strand break (DSB) yield, single-strand break/DSB ratio, and DSB/Gbp/decay, were calculated for Ac-225 (alpha emitter), Lu-177 (beta emitter), and Pb-212 (mixed alpha/beta emitter). Simulations accounted for physical, physicochemical, and chemical stages, with validation against published data for Lu-177 and Ac-225. 
+            Results 
+            Alpha emitter Ac-225 exhibited the highest DSB/Gbp/decay (1.646 in nucleus geometry) and absorbed dose (0.256 Gy/decay), followed by Pb-212 (0.455 DSB/Gbp/decay, 0.0684 Gy/decay), and Lu-177 (0.0058 DSB/Gbp/decay, 0.0007 Gy/decay). DSB yields increased with proximity to the nucleus, with Ac-225 showing up to 284 times greater DSB/Gbp/decay than Lu-177. Validation showed < 10\% divergence from reference studies. Conclusions Geant4-DNA simulations highlight the superior radiobiological effectiveness of alpha emitters, particularly Ac-225, for inducing DNA damage and emphasize the importance of source localization. These findings enhance our understanding of TRT's radiobiological effects and can be used to support development of refined therapeutic strategies.},
+selected={true}
 }
+
+@article{CHATZIPAPAS2024104839,
+  title = {Development of a novel computational technique to create DNA and cell geometrical models for Geant4-DNA},
+  journal = {Physica Medica},
+  volume = {127},
+  pages = {104839},
+  month = {october},
+  year = {2024},
+  issn = {1120-1797},
+  doi = {https://doi.org/10.1016/j.ejmp.2024.104839},
+  url = {https://www.sciencedirect.com/science/article/pii/S1120179724010962},
+  author = {Konstantinos P. Chatzipapas and Hoang Ngoc Tran and Milos Dordevic and Dousatsu Sakata and Sebastien Incerti and Dimitris Visvikis and Julien Bert},
+  keywords = {Geant4-DNA, DNA geometries, DNA damage response, Monte Carlo simulations},
+  abstract = {Background
+  This study aimed to develop a novel human cell geometry for the Geant4-DNA simulation toolkit that explicitly incorporates all 23 chromosome pairs of the human cell. This approach contrasts with the existing, default human cell, geometrical model, which utilizes a continuous Hilbert curve.
+  Methods
+  A Python-based tool named “complexDNA” was developed to facilitate the design of both simple and complex DNA geometries. This tool was employed to construct a human cell geometry with individual pairs of chromosomes. Subsequently, the performance of this chromosomal model was compared to the standard human cell model provided in the “molecularDNA” Geant4-DNA example.
+  Results
+  Simulations using the new chromosomal model revealed minimal discrepancies in DNA damage yield and fragment size distribution compared to the default human cell model. Notably, the chromosomal model demonstrated significant computational efficiency, requiring approximately three times less simulation time to achieve equivalent results.
+  Conclusions
+  This work highlights the importance of incorporating chromosomal structure into human cell models for radiation biology research. The “complexDNA” tool offers a valuable resource for creating intricate DNA structures for future studies. Further refinements, such as implementing smaller voxels for euchromatin regions, are proposed to enhance the model’s accuracy.},
+  selected={true}
+}
+
+@article{konijnenberg2021eanm,
+  author    = {Konijnenberg, Mark and Herrmann, Ken and Kobe, Carsten and Verburg, Frederik and Hindorf, Cecilia and Hustinx, Roland and Lassmann, Michael},
+  title     = {{EANM} position paper on article 56 of the Council Directive 2013/59/{Euratom} (basic safety standards) for nuclear medicine therapy},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2021},
+  volume    = {48},
+  number    = {1},
+  pages     = {67--72},
+  doi       = {10.1007/s00259-020-05038-9},
+  pmid      = {33057773}
+}
+
+@article{gleisner2022eanm,
+  author    = {Sj{\"o}green Gleisner, Katarina and Chouin, Nicolas and Minguez Gabina, Pablo and Cicone, Francesco and Gnesin, Silvano and Stokke, Caroline and Konijnenberg, Mark and Cremonesi, Marta and Verburg, Frederik A and Bernhardt, Peter and Eberlein, Uta and Gear, Jonathan},
+  title     = {{EANM} dosimetry committee recommendations for dosimetry of 177{Lu}-labelled somatostatin-receptor- and {PSMA}-targeting ligands},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2022},
+  volume    = {49},
+  number    = {6},
+  pages     = {1778--1809},
+  doi       = {10.1007/s00259-022-05727-7},
+  pmid      = {35284969}
+}
+
+@article{weber2022eanm,
+  author    = {Weber, M and Lam, M and Chiesa, C and Konijnenberg, M and Cremonesi, M and Flamen, P and Gnesin, S and Bodei, L and Kracmerova, T and Luster, M and Garin, E and Herrmann, K},
+  title     = {{EANM} procedure guideline for the treatment of liver cancer and liver metastases with intra-arterial radioactive compounds},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2022},
+  volume    = {49},
+  number    = {5},
+  pages     = {1682--1699},
+  doi       = {10.1007/s00259-021-05600-z},
+  pmid      = {35146577}
+}
+
+@article{chiesa2021eanm,
+  author    = {Chiesa, Carlo and Sjogreen-Gleisner, Katarina and Walrand, Stephan and Strigari, Lidia and Flux, Glenn and Gear, Jonathan and Stokke, Caroline and Minguez Gabina, Pablo and Bernhardt, Peter and Konijnenberg, Mark},
+  title     = {{EANM} dosimetry committee series on standard operational procedures: a unified methodology for 99m{Tc}-{MAA} pre- and 90{Y} peri-therapy dosimetry in liver radioembolization with 90{Y} microspheres},
+  journal   = {EJNMMI Physics},
+  year      = {2021},
+  volume    = {8},
+  number    = {1},
+  pages     = {77},
+  doi       = {10.1186/s40658-021-00394-3},
+  pmid      = {34767102}
+}
+
+@article{gleisner2017variations,
+  author    = {Sj{\"o}green Gleisner, Katarina and Spezi, Emiliano and Solny, Pavel and Minguez Gabina, Pablo and Cicone, Francesco and Stokke, Caroline and Chiesa, Carlo and Paphiti, Maria and Brans, Boudewijn and Sandstr{\"o}m, Mattias and Tipping, Jill and Konijnenberg, Mark and Flux, Glenn},
+  title     = {Variations in the practice of molecular radiotherapy and implementation of dosimetry: results from a {European} survey},
+  journal   = {EJNMMI Physics},
+  year      = {2017},
+  volume    = {4},
+  number    = {1},
+  pages     = {28},
+  doi       = {10.1186/s40658-017-0193-4},
+  pmid      = {29199391}
+}
+
+@article{peters2021intratherapeutic,
+  author    = {Peters, Steffie M B and Priv{\'e}, Bastiaan M and de Bakker, Maarten and de Lange, Frank and Jentzen, Walter and Eek, Annemarie and Muselaers, Constantijn H J and Mehra, Niven and Witjes, J Alfred and Gotthardt, Martin and Nagarajah, James and Konijnenberg, Mark W},
+  title     = {Intra-therapeutic dosimetry of [{177Lu}]{Lu}-{PSMA}-617 in low-volume hormone-sensitive metastatic prostate cancer patients and correlation with treatment outcome},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2021},
+  volume    = {49},
+  number    = {2},
+  pages     = {460--469},
+  doi       = {10.1007/s00259-021-05471-4},
+  pmid      = {34218300}
+}
+
+@article{prive2021psma617,
+  author    = {Priv{\'e}, Bastiaan M and Peters, Steffie M B and Muselaers, Constantijn H J and van Oort, Inge M and Janssen, Marcel J R and Sedelaar, J P Michiel and Konijnenberg, Mark W and Z{\'a}mecnik, Patrik and Uijen, Maike J M and Schilham, Melline G M and Eek, Annemarie and Scheenen, Tom W J and Verzijlbergen, J Fred and Gerritsen, Winald R and Mehra, Niven and Smeenk, Robert J},
+  title     = {Lutetium-177-{PSMA}-617 in Low-Volume Hormone-Sensitive Metastatic Prostate Cancer: {A} Prospective Pilot Study},
+  journal   = {Clinical Cancer Research},
+  year      = {2021},
+  volume    = {27},
+  number    = {13},
+  pages     = {3595--3601},
+  doi       = {10.1158/1078-0432.CCR-20-4298},
+  pmid      = {33883176}
+}
+
+@article{prive2022psma89zr,
+  author    = {Priv{\'e}, Bastiaan M and Derks, Yvonne H W and Rosar, Florian and Franssen, Gerben M and Peters, Steffie M B and Khreish, Fadi and Bartholom{\"a}, Mark and Maus, Stephan and Gotthardt, Martin and Laverman, Peter and Konijnenberg, Mark W and Ezziddin, Samer and Nagarajah, James and Heskamp, Sandra},
+  title     = {89{Zr}-labeled {PSMA} ligands for pharmacokinetic {PET} imaging and dosimetry of {PSMA}-617 and {PSMA-I\&T}: a preclinical evaluation and first in man},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2022},
+  volume    = {49},
+  number    = {6},
+  pages     = {2064--2076},
+  doi       = {10.1007/s00259-021-05661-0},
+  pmid      = {34932154}
+}
+
+@article{lassmann2021dosimetry,
+  author    = {Lassmann, Michael and Eberlein, Uta and Gear, Jonathan and Konijnenberg, Mark and Kunikowska, Jolanta},
+  title     = {Dosimetry for Radiopharmaceutical Therapy: {The} {European} Perspective},
+  journal   = {Journal of Nuclear Medicine},
+  year      = {2021},
+  volume    = {62},
+  number    = {Suppl 3},
+  pages     = {73S--79S},
+  doi       = {10.2967/jnumed.121.262754},
+  pmid      = {34857624}
+}
+
+@article{kampen2022radiosynoviorthesis,
+  author    = {Kampen, W U and Boddenberg-P{\"a}tzold, B and Fischer, M and Gabriel, M and Klett, R and Konijnenberg, M and Kresnik, E and Lellouche, H and Paycha, F and Terslev, L and Turkmen, C and van der Zant, F and Antunovic, L and Panagiotidis, E and Gnanasegaran, G and Kuwert, T and Van den Wyngaert, T},
+  title     = {The {EANM} guideline for radiosynoviorthesis},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2022},
+  volume    = {49},
+  number    = {2},
+  pages     = {681--708},
+  doi       = {10.1007/s00259-021-05541-7},
+  pmid      = {34671820}
+}
+
+@article{bergsma2016nephrotoxicity,
+  author    = {Bergsma, Hendrik and Konijnenberg, Mark W and van der Zwan, Wouter A and Kam, Boen L R and Teunissen, Jaap J M and Kooij, Peter P and Mauff, Katya A L and Krenning, Eric P and Kwekkeboom, Dik J},
+  title     = {Nephrotoxicity after {PRRT} with (177){Lu}-{DOTA}-octreotate},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2016},
+  volume    = {43},
+  number    = {10},
+  pages     = {1802--1811},
+  doi       = {10.1007/s00259-016-3382-9},
+  pmid      = {27160225}
+}
+
+@article{vanderkroon2017exendin,
+  author    = {van der Kroon, Inge and Woliner-van der Weg, Wietske and Brom, Maarten and Joosten, Lieke and Frielink, Cathelijne and Konijnenberg, Mark W and Visser, Eric P and Gotthardt, Martin},
+  title     = {Whole organ and islet of {Langerhans} dosimetry for calculation of absorbed doses resulting from imaging with radiolabeled exendin},
+  journal   = {Scientific Reports},
+  year      = {2017},
+  volume    = {7},
+  pages     = {39800},
+  doi       = {10.1038/srep39800},
+  pmid      = {28067253}
+}
+
+@article{maina2016cp04,
+  author    = {Maina, Theodosia and Konijnenberg, Mark W and KolencPeitl, Petra and Garnuszek, Piotr and Nock, Berthold A and Kaloudi, Aikaterini and Kroselj, Marko and Zaletel, Katja and Maecke, Helmut and Mansi, Rosalba and Erba, Paola and von Guggenberg, Elisabeth and Hubalewska-Dydejczyk, Alicja and Mikolajczak, Renata and Decristoforo, Clemens},
+  title     = {Preclinical pharmacokinetics, biodistribution, radiation dosimetry and toxicity studies required for regulatory approval of a phase {I} clinical trial with (111){In}-{CP04} in medullary thyroid carcinoma patients},
+  journal   = {European Journal of Pharmaceutical Sciences},
+  year      = {2016},
+  volume    = {91},
+  pages     = {236--242},
+  doi       = {10.1016/j.ejps.2016.05.011},
+  pmid      = {27185299}
+}
+
+@article{muller2007diagnostic,
+  author    = {M{\"u}ller, Cristina and Forrer, Flavio and Bernard, Bert F and Melis, Marleen and Konijnenberg, Mark and Krenning, Eric P and de Jong, Marion},
+  title     = {Diagnostic versus therapeutic doses of [(177){Lu}-{DOTA}-{Tyr}(3)]-octreotate: uptake and dosimetry in somatostatin receptor-positive tumors and normal organs},
+  journal   = {Cancer Biotherapy and Radiopharmaceuticals},
+  year      = {2007},
+  volume    = {22},
+  number    = {1},
+  pages     = {151--159},
+  doi       = {10.1089/cbr.2007.309},
+  pmid      = {17627424}
+}
+
+@article{prive2023fap,
+  author    = {Priv{\'e}, Bastiaan M and Boussihmad, Mohamed A and Timmermans, Bart and van Gemert, Willemijn A and Peters, Steffie M B and Derks, Yvonne H W and van Lith, Sanne A M and Mehra, Niven and Nagarajah, James and Heskamp, Sandra and Westdorp, Harm},
+  title     = {Fibroblast activation protein-targeted radionuclide therapy: background, opportunities, and challenges of first (pre)clinical studies},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2023},
+  volume    = {50},
+  number    = {7},
+  pages     = {1906--1918},
+  doi       = {10.1007/s00259-023-06144-0},
+  pmid      = {36813980}
+}
+
+@article{huizing2017caix,
+  author    = {Huizing, Fokko J and Hoeben, Bianca A W and Franssen, Gerben and Lok, Jasper and Heskamp, Sandra and Oosterwijk, Egbert and Boerman, Otto C and Bussink, Johan},
+  title     = {Preclinical validation of 111{In}-girentuximab-{F(ab')2} as a tracer to image hypoxia related marker {CAIX} expression in head and neck cancer xenografts},
+  journal   = {Radiotherapy and Oncology},
+  year      = {2017},
+  volume    = {124},
+  number    = {3},
+  pages     = {521--525},
+  doi       = {10.1016/j.radonc.2017.07.025},
+  pmid      = {28789809}
+}
+
+@article{kleinendorst2024caix,
+  author    = {Kleinendorst, Simone C and Oosterwijk, Egbert and Molkenboer-Kuenen, Janneke and Frielink, Cathelijne and Franssen, Gerben M and Boreel, Daan F and Tamborino, Giulia and Gloudemans, Manon and Hendrikx, Merel and Kroon, Dennis and Hillen, Jopp and Bussink, Johan and Muselaers, Stijn and Mulders, Peter and Konijnenberg, Mark W and Wheatcroft, Michael P and Twumasi-Boateng, Kwame and Heskamp, Sandra},
+  title     = {Towards effective {CAIX}-targeted radionuclide and checkpoint inhibition combination therapy for advanced clear cell renal cell carcinoma},
+  journal   = {Theranostics},
+  year      = {2024},
+  volume    = {14},
+  number    = {9},
+  pages     = {3693--3707},
+  doi       = {10.7150/thno.96944},
+  pmid      = {38948062}
+}
+
+@article{wenker2024hypoxia,
+  author    = {Wenker, S T M and van Lith, S A M and Tamborino, G and Konijnenberg, M W and Bussink, J and Heskamp, S},
+  title     = {The potential of targeted radionuclide therapy to treat hypoxic tumor cells},
+  journal   = {Nuclear Medicine and Biology},
+  year      = {2025},
+  volume    = {140--141},
+  pages     = {108971},
+  doi       = {10.1016/j.nucmedbio.2024.108971},
+  pmid      = {39579561}
+}
+
+@article{gabina2023eanm,
+  author    = {M{\'i}nguez Gabi{\~n}a, Pablo and Sj{\"o}green Gleisner, Katarina and Cremonesi, Marta and Stokke, Caroline and Flux, Glenn and Cicone, Francesco and Konijnenberg, Mark and Aldridge, Matt and Sandstrom, Mattias and Chiesa, Carlo and Paphiti, Maria and Hippel{\"a}inen, Eero and Uribe, Carlos and Solny, Pavel and Gnesin, Silvano and Bernhardt, Peter and Chouin, Nicolas and Costa, Pedro Fragoso and Glatting, Gerhard and Verburg, Frederik and Gear, Jonathan},
+  title     = {Results from an {EANM} survey on time estimates and personnel responsible for main tasks in molecular radiotherapy dosimetry},
+  journal   = {European Journal of Nuclear Medicine and Molecular Imaging},
+  year      = {2023},
+  volume    = {50},
+  number    = {9},
+  pages     = {2595--2604},
+  doi       = {10.1007/s00259-023-06215-2},
+  pmid      = {37129712}
+}
+
