@@ -214,6 +214,7 @@ search: false
 
 /* Keep masthead and sidebar visible on scroll */
 .masthead {
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 40;
@@ -221,9 +222,11 @@ search: false
 }
 
 .sidebar.sticky {
+	position: -webkit-sticky;
 	position: sticky;
 	top: 5.5rem;
 	align-self: start;
 	max-height: calc(100vh - 6.5rem);
 	overflow-y: auto;
+	z-index: 20;
 }
