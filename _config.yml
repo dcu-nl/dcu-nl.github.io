@@ -162,7 +162,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2024"
+  since: "2017"
 
 
 # Reading Files
@@ -281,7 +281,7 @@ whitelist:
 
 # Jekyll Scholar
 scholar:
-  style: apa
+  style: ./_bibliography/apa-custom.csl
   locale: en
   sort_by: year
   order: descending
