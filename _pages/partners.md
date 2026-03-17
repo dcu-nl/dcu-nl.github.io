@@ -35,4 +35,10 @@ last_modified_at: 2026-03-17
 		<p>Joint efforts in nuclear medicine and molecular imaging for advanced dosimetry applications.</p>
 		<p><a href="https://umcgresearch.org/w/nuclear-medicine-and-molecular-imaging" target="_blank" rel="noopener noreferrer">Visit UMCG</a></p>
 	</article>
+
+	<article class="content-card">
+		<h3>Netherlands Cancer Institute</h3>
+		<p>Collaboration with the Netherlands Cancer Institute to strengthen cancer-focused research and translational impact.</p>
+		<p><a href="https://www.nki.nl/" target="_blank" rel="noopener noreferrer">Visit NKI</a></p>
+	</article>
 </div>
