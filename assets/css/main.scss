@@ -218,7 +218,7 @@ search: false
 	position: sticky;
 	top: 0;
 	z-index: 40;
-	/*background: #ffffff;*/
+	background: $background-color;
 }
 
 @media (min-width: 64em) {
