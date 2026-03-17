@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: https://dcu-nl.github.io/about/
 title: "About"
 excerpt: "DCU"
 layouts_gallery:
