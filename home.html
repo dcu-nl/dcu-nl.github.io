@@ -13,13 +13,30 @@ classes: wide
 </figure>
 
 <h3>Events</h3>
-<p>
-  <strong>Basic Dosimetry and Radiobiology for Radionuclide Therapy</strong><br>
-  Professional education course by Radboud University.<br>
-  <a href="https://www.ru.nl/en/education/education-for-professionals/overview/basic-dosimetry-and-radiobiology-for-radionuclide-therapy" target="_blank" rel="noopener noreferrer">
-    View event details and registration
-  </a>
-</p>
+{% assign latest_events = site.events | sort: "publication_date" | reverse | slice: 0, 3 %}
+{% if latest_events and latest_events.size > 0 %}
+  {% for event in latest_events %}
+    <p>
+      <strong>{{ event.title }}</strong><br>
+      {% if event.publication_date %}
+        Published: {{ event.publication_date | date: "%d %b %Y" }}<br>
+      {% endif %}
+      {% if event.subscription_deadline %}
+        Subscription deadline: {{ event.subscription_deadline | date: "%d %b %Y" }}<br>
+      {% endif %}
+      {% if event.excerpt %}
+        {{ event.excerpt | strip_html | strip }}<br>
+      {% endif %}
+      {% if event.event_url %}
+        <a href="{{ event.event_url }}" target="_blank" rel="noopener noreferrer">View event details and registration</a>
+      {% else %}
+        <a href="{{ event.url | relative_url }}">Read more</a>
+      {% endif %}
+    </p>
+  {% endfor %}
+{% else %}
+  <p>No events published yet.</p>
+{% endif %}
 
 <h3>Contact</h3>
 Email: dosimetry.nl[at]gmail.com

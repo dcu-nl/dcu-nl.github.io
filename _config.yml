@@ -203,6 +203,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /events/:path/
+
 
 # Conversion
 markdown: kramdown
@@ -341,5 +347,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+  # _events
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: single
+      author_profile: false
 
 
