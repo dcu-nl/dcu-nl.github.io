@@ -8,7 +8,7 @@ The Dosimetry Core Unit works with clinical and academic partners to strengthen 
 
 ## Core Partners
 
-- Radboud University Medical Center ([RadboudUMC](https://www.radboudumc.nl/en/))
+- Radboud University Medical Center ([RadboudUMC](https://www.radboudumc.nl/en/research/at-departmental-level/medical-imaging/dosimetry-core-unit))
 - Erasmus Medical Center ([ErasmusMC](https://www.erasmusmc.nl/en/research/departments/radiology-and-nuclear-medicine))
 - Delft University of Technology - Reactor Institute ([TU Delft](https://www.tudelft.nl/tnw/over-faculteit/afdelingen/radiation-science-technology/research/research-groups/applied-radiation-isotopes))
 - University Medical Center Groningen ([UMCG](https://umcgresearch.org/w/nuclear-medicine-and-molecular-imaging))
