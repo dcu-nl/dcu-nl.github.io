@@ -43,7 +43,7 @@ classes: wide
           Date TBA
         {% endif %}
       </div>
-      <div>
+      <div class="event-content">
         <strong>{{ event.title }}</strong><br>
         {% if event.subscription_deadline %}
           {% assign deadline_ts = event.subscription_deadline | date: '%s' | plus: 0 %}
@@ -80,7 +80,7 @@ classes: wide
     <a class="home-pubs__all" href="{{ '/publications/' | relative_url }}">View all publications</a>
   </div>
   <div class="home-pubs__list">
-    {% bibliography --query @*[0..2] %}
+    {% bibliography --query @* --group_by none --max 3 %}
   </div>
 </section>
 
