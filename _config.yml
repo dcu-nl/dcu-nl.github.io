@@ -115,15 +115,15 @@ analytics:
 # Site Author
 author:
   name             : "Dosimetry Core Unit"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/dcu_logo.tif" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Τhe DCU aims to support effective and safe radionuclide therapy for cancer patients."
   location         : "Netherlands"
-  email            :
-  # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
+  email            : "dosimetry.nl@gmail.com"
+  # fediverse       : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
     - label: "Email"
       icon: "fas fa-fw fa-square-envelope"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:dosimetry.nl@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
