@@ -115,7 +115,7 @@ analytics:
 # Site Author
 author:
   name             : "Dosimetry Core Unit"
-  avatar           : "/assets/images/dcu_logo.tif" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/dcu_logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Τhe DCU aims to support effective and safe radionuclide therapy for cancer patients."
   location         : "Netherlands"
   email            : "dosimetry.nl@gmail.com"
