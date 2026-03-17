@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /about/
 title: "about"
 last_modified_at: 2026-03-17
 ---
