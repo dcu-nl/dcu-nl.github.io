@@ -13,26 +13,60 @@ classes: wide
 </figure>
 
 <h3>Events</h3>
+<style>
+  .event-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .event-date {
+    font-weight: 700;
+    color: #1f3f66;
+    white-space: nowrap;
+  }
+
+  .event-deadline {
+    color: #b54747;
+    font-weight: 600;
+  }
+
+  @media (max-width: 700px) {
+    .event-item {
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
+    }
+  }
+</style>
 {% assign latest_events = site.events | sort: "publication_date" | reverse | slice: 0, 3 %}
 {% if latest_events and latest_events.size > 0 %}
   {% for event in latest_events %}
-    <p>
-      <strong>{{ event.title }}</strong><br>
-      {% if event.publication_date %}
-        Published: {{ event.publication_date | date: "%d %b %Y" }}<br>
-      {% endif %}
-      {% if event.subscription_deadline %}
-        Subscription deadline: {{ event.subscription_deadline | date: "%d %b %Y" }}<br>
-      {% endif %}
-      {% if event.excerpt %}
-        {{ event.excerpt | strip_html | strip }}<br>
-      {% endif %}
-      {% if event.event_url %}
-        <a href="{{ event.event_url }}" target="_blank" rel="noopener noreferrer">View event details and registration</a>
-      {% else %}
-        <a href="{{ event.url | relative_url }}">Read more</a>
-      {% endif %}
-    </p>
+    <div class="event-item">
+      <div class="event-date">
+        {% if event.publication_date %}
+          {{ event.publication_date | date: "%b %-d, %Y" }}
+        {% else %}
+          Date TBA
+        {% endif %}
+      </div>
+      <div>
+        <strong>{{ event.title }}</strong><br>
+        {% if event.subscription_deadline %}
+          <span class="event-deadline">Deadline: {{ event.subscription_deadline | date: "%b %-d, %Y" }}</span><br>
+        {% endif %}
+        {% if event.excerpt %}
+          {{ event.excerpt | strip_html | strip }}<br>
+        {% endif %}
+        {% if event.event_url %}
+          <a href="{{ event.event_url }}" target="_blank" rel="noopener noreferrer">View event details and registration</a>
+        {% else %}
+          <a href="{{ event.url | relative_url }}">Read more</a>
+        {% endif %}
+      </div>
+    </div>
   {% endfor %}
 {% else %}
   <p>No events published yet.</p>
