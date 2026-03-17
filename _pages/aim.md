@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /aim/
 title: "Aim of the DCU"
 last_modified_at: 2026-03-17
 ---
