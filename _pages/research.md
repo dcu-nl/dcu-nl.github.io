@@ -15,22 +15,40 @@ last_modified_at: 2026-03-17
 	<article class="content-card">
 		<h3>Clinical Research</h3>
 		<p>
-			Our clinical dosimetry research can be divided in dosimetry used in systemic therapies and local therapies (radio-embolization). We currently don’t perform clinical dosimetry research related to photodynamic therapy.
+			Our clinical dosimetry research can be divided in dosimetry used in systemic therapies and local therapies (radio-embolization).
 		</p>
+		<details class="content-card__details">
+			<summary>Read more</summary>
+			<p>
+				We currently don’t perform clinical dosimetry research related to photodynamic therapy.
+			</p>
+		</details>
 	</article>
 
 	<article class="content-card">
 		<h3>Preclinical Research</h3>
 		<p>
-			Our preclinical research focuses both on radionuclide therapy and photodynamic therapy. In both cases, we work on the development of new tracers for radionuclide/photodynamic therapy, mainly for applications that currently lack the availability of suitable therapeutic tracers. Using dosimetry, we can determine if tracer accumulation in tumors is sufficient to slow down tumor growth, while uptake in healthy organs is minimal. Furthermore, we focus on the development of PET-tracers that can be used for pre-therapeutic dosimetry, for which the predictive value is evaluated in preclinical mouse-models. In everything we do, the clinical need is our leading factor for our translational research and focus. Besides development of new tracers, we also work on microdosimetry and identifying radiobiological and immunological responses, since this is essential to understand dose-effect relationships.
+			Our preclinical research focuses both on radionuclide therapy and photodynamic therapy.
 		</p>
+		<details class="content-card__details">
+			<summary>Read more</summary>
+			<p>
+				In both cases, we work on the development of new tracers for radionuclide/photodynamic therapy, mainly for applications that currently lack the availability of suitable therapeutic tracers. Using dosimetry, we can determine if tracer accumulation in tumors is sufficient to slow down tumor growth, while uptake in healthy organs is minimal. Furthermore, we focus on the development of PET-tracers that can be used for pre-therapeutic dosimetry, for which the predictive value is evaluated in preclinical mouse-models. In everything we do, the clinical need is our leading factor for our translational research and focus. Besides development of new tracers, we also work on microdosimetry and identifying radiobiological and immunological responses, since this is essential to understand dose-effect relationships.
+			</p>
+		</details>
 	</article>
 
 	<article class="content-card">
 		<h3>Cell Research</h3>
 		<p>
-			Our cell-dosimetry research focuses on identifying radionuclide inhomogeneities on subcellular level using fluorescent markers, and measuring cellular therapy responses such as DNA damage response. This detailed knowledge is generated using histology and live-cell microscopy, and will be integrated into dosimetric simulation models to evaluate new radionuclide therapies. This way, we can improve dose predictions which can be translated to mouse and man.
+			Our cell-dosimetry research focuses on identifying radionuclide inhomogeneities on subcellular level using fluorescent markers, and measuring cellular therapy responses such as DNA damage response.
 		</p>
+		<details class="content-card__details">
+			<summary>Read more</summary>
+			<p>
+				This detailed knowledge is generated using histology and live-cell microscopy, and will be integrated into dosimetric simulation models to evaluate new radionuclide therapies. This way, we can improve dose predictions which can be translated to mouse and man.
+			</p>
+		</details>
 	</article>
 
 	<article class="content-card">

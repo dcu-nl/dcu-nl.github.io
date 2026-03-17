@@ -269,6 +269,35 @@ search: false
 	font-weight: 700;
 }
 
+.content-card__details {
+	margin-top: 0.35rem;
+}
+
+.content-card__details summary {
+	cursor: pointer;
+	font-weight: 700;
+	color: #1f3f66;
+	list-style: none;
+}
+
+.content-card__details summary::-webkit-details-marker {
+	display: none;
+}
+
+.content-card__details summary::before {
+	content: "+ ";
+	font-weight: 700;
+}
+
+.content-card__details[open] summary::before {
+	content: "- ";
+}
+
+.content-card__details p {
+	margin-top: 0.45rem;
+	margin-bottom: 0;
+}
+
 @media (max-width: 700px) {
 	.content-grid {
 		grid-template-columns: 1fr;
