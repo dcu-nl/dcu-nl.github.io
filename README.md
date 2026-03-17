@@ -6,8 +6,9 @@ The site is built with Jekyll (Minimal Mistakes theme) and deployed to GitHub Pa
 ## What This Repository Includes
 
 - Main website pages (Aim, Publications, Partners, Pillars, Research)
-- Homepage with a dynamic Events section
+- Homepage with a dynamic Events section and featured publications preview
 - Publication list generated from BibTeX using `jekyll-scholar`
+- Sidebar partner logo block (Radboudumc, Erasmus MC, TU Delft, UMCG)
 - GitHub Actions workflow for build and deployment
 
 ## Main Content Locations
@@ -17,6 +18,9 @@ The site is built with Jekyll (Minimal Mistakes theme) and deployed to GitHub Pa
 - `_events/`: One Markdown file per event (collection-based)
 - `_bibliography/papers.bib`: Publications source in BibTeX format
 - `_data/navigation.yml`: Top menu/navigation links
+- `_includes/sidebar-custom.html`: Custom sidebar content (partners logos)
+- `assets/images/partners/`: Partner logo files used in the sidebar
+- `assets/css/main.scss`: Homepage and custom visual styling overrides
 - `_config.yml`: Site configuration, plugins, collections
 - `.github/workflows/deploy.yml`: GitHub Pages deployment pipeline
 
@@ -32,6 +36,7 @@ Events are managed as a Jekyll collection.
 	- `event_url` (external event page)
 	- `excerpt` (short text shown on homepage)
 3. The homepage automatically shows the latest 3 events.
+4. Event cards include status labels based on deadline (`Open`, `Closing soon`, `Closed`).
 
 ## Publications Workflow
 
@@ -39,6 +44,14 @@ Events are managed as a Jekyll collection.
 - Bibliography source: `_bibliography/papers.bib`
 - Rendering uses `jekyll-scholar` (configured in `_config.yml`)
 - DOI links on the publications page are converted to clickable links in the page script
+- Homepage shows only the latest 3 publications in a featured section
+
+## Homepage Notes
+
+- Hero section includes quick calls-to-action to publications and events
+- Events are rendered in 2 columns: date (left) and details (right)
+- Deadline text is highlighted in red for visibility
+- Top masthead and sidebar are configured to stay visible while scrolling
 
 ## Local Development
 
