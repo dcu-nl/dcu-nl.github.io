@@ -36,7 +36,7 @@ classes: wide
     <a class="home-pubs__all" href="{{ '/publications/' | relative_url }}">View all publications</a>
   </div>
   <div class="home-pubs__list">
-    {% bibliography --query @* --max 3 %}
+    {% bibliography --query @*[0..2] %}
   </div>
 </section>
 
