@@ -1,13 +1,7 @@
 ---
 permalink: /
 title: "about"
-excerpt: "DCU"
-layouts_gallery:
-  #- url: /assets/images/mm-layout-splash.png
-  #  image_path: /assets/images/mm-layout-splash.png
-  #  alt: "splash layout example"
 last_modified_at: 2026-03-17
-toc: true
 ---
 
 # Welcome to the official page of the Dosimetry Core Unit (DCU), based on the Netherlands. 
