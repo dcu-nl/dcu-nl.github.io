@@ -212,8 +212,18 @@ search: false
 	object-fit: contain;
 }
 
-/* Keep sidebar static on scroll */
+/* Keep masthead and sidebar visible on scroll */
+.masthead {
+	position: sticky;
+	top: 0;
+	z-index: 40;
+	background: #ffffff;
+}
+
 .sidebar.sticky {
-	position: static;
-	top: auto;
+	position: sticky;
+	top: 5.5rem;
+	align-self: start;
+	max-height: calc(100vh - 6.5rem);
+	overflow-y: auto;
 }
