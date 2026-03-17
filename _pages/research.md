@@ -4,20 +4,43 @@ title: "Research"
 last_modified_at: 2026-03-17
 ---
 
-DCU research covers the full translational pathway from bench to bedside to community, with a strong focus on safe and effective radionuclide therapy.
+<section class="section-intro">
+	<p>
+		DCU research spans the full translational continuum from cell and preclinical models
+		to patient-focused clinical studies, with the goal of safer and more effective therapy.
+	</p>
+</section>
 
-## Clinical Research
+<div class="content-grid">
+	<article class="content-card">
+		<h3>Clinical Research</h3>
+		<p>
+			Focused on systemic and local therapies (including radioembolization) to strengthen
+			treatment personalization by linking absorbed dose, response, and safety.
+		</p>
+	</article>
 
-Clinical dosimetry research is focused on systemic therapies and local therapies such as radioembolization. The objective is to improve treatment personalization by aligning absorbed dose with therapy response and safety.
+	<article class="content-card">
+		<h3>Preclinical Research</h3>
+		<p>
+			Advances innovation in radionuclide and photodynamic therapy through tracer development,
+			method validation, and targeted models for unmet therapeutic needs.
+		</p>
+	</article>
 
-## Preclinical Research
+	<article class="content-card">
+		<h3>Cell Research</h3>
+		<p>
+			Investigates subcellular radionuclide inhomogeneity and radiation-response biology,
+			including DNA damage pathways that inform patient-level dosimetry decisions.
+		</p>
+	</article>
 
-Preclinical programs support innovation in both radionuclide and photodynamic therapy. This includes development and validation of new tracers where suitable therapeutic options are currently limited.
-
-## Cell Research
-
-Cell-level dosimetry research studies subcellular radionuclide inhomogeneity and radiation response mechanisms, including DNA damage response. These studies generate biological insight that informs patient-level dosimetry strategies.
-
-## Translational Focus
-
-Across all research tracks, DCU integrates imaging, dosimetry, and biology to improve treatment planning, therapeutic effectiveness, and toxicity management.
+	<article class="content-card">
+		<h3>Translational Focus</h3>
+		<p>
+			Integrates imaging, dosimetry, and biology across all tracks to improve planning quality,
+			therapeutic effectiveness, and toxicity management in clinical care.
+		</p>
+	</article>
+</div>
