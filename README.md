@@ -8,7 +8,7 @@ The site is built with Jekyll (Minimal Mistakes theme) and deployed to GitHub Pa
 - Main website pages (Aim, Publications, Partners, Pillars, Research)
 - Homepage with a dynamic Events section and featured publications preview
 - Publication list generated from BibTeX using `jekyll-scholar`
-- Sidebar partner logo block (Radboudumc, Erasmus MC, TU Delft, UMCG)
+- Sidebar partner logo block (RadboudUMC, ErasmusMC, TU_Delft, UMCG)
 - GitHub Actions workflow for build and deployment
 
 ## Main Content Locations
