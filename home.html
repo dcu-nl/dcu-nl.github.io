@@ -27,16 +27,6 @@ classes: wide
   <a href="{{ '/partners/' | relative_url }}">Partners</a>
 </section>
 
-<section class="home-pubs">
-  <div class="home-pubs__header">
-    <h3>Featured Publications</h3>
-    <a class="home-pubs__all" href="{{ '/publications/' | relative_url }}">View all publications</a>
-  </div>
-  <div class="home-pubs__list">
-    {% bibliography --query @*[0..2] %}
-  </div>
-</section>
-
 <h3 id="events">Events</h3>
 {% assign latest_events = site.events | sort: "publication_date" | reverse | slice: 0, 3 %}
 {% if latest_events and latest_events.size > 0 %}
@@ -83,6 +73,16 @@ classes: wide
 {% else %}
   <p>No events published yet.</p>
 {% endif %}
+
+<section class="home-pubs">
+  <div class="home-pubs__header">
+    <h3>Featured Publications</h3>
+    <a class="home-pubs__all" href="{{ '/publications/' | relative_url }}">View all publications</a>
+  </div>
+  <div class="home-pubs__list">
+    {% bibliography --query @*[0..2] %}
+  </div>
+</section>
 
 <h3>Contact</h3>
 <section class="contact-card">
