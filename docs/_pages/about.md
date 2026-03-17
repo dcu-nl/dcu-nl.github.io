@@ -1,6 +1,6 @@
 ---
-permalink: /about/
-title: "About"
+permalink: /
+title: "about"
 excerpt: "DCU"
 layouts_gallery:
   #- url: /assets/images/mm-layout-splash.png
