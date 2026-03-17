@@ -114,7 +114,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "DCU consortium"
+  name             : "Dosimetry Core Unit"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Τhe DCU aims to support effective and safe radionuclide therapy for cancer patients."
   location         : "Netherlands"
