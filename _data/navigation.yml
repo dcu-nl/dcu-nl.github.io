@@ -4,12 +4,12 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Aim"
     url: /aim/
-  - title: "Partners"
-    url: /partners/
   - title: "Pillars"
     url: /pillars/
   - title: "Research"
     url: /research/
+  - title: "Partners"
+    url: /partners/ 
   - title: "Publications"
     url: /publications/
   # - title: "Sample Posts"
