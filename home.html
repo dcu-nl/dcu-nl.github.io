@@ -6,43 +6,47 @@ author_profile: true
 classes: wide
 ---
 
-<h3>Welcome to the official page of the DCU, based in the Netherlands.</h3>
+<section class="home-hero">
+  <div class="home-hero__content">
+    <h2>Advancing Safe and Effective Radionuclide Therapy</h2>
+    <p>
+      The Dosimetry Core Unit (DCU) is a Netherlands-based consortium supporting clinical,
+      translational, and preclinical dosimetry research in molecular radiotherapy.
+    </p>
+    <div class="home-hero__actions">
+      <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">Explore Publications</a>
+      <a class="btn btn--inverse" href="{{ '/#events' | relative_url }}">Join Upcoming Events</a>
+    </div>
+  </div>
+  <figure class="home-hero__logo">
+    <img src="../assets/images/dcu_logo.png" alt="Dosimetry Core Unit logo">
+  </figure>
+</section>
 
-<figure> 
-  <img src="../assets/images/dcu_logo.png">
-</figure>
+<section class="home-quick-links" aria-label="Quick links">
+  <a href="{{ '/aim/' | relative_url }}">Aim</a>
+  <a href="{{ '/pillars/' | relative_url }}">Pillars</a>
+  <a href="{{ '/research/' | relative_url }}">Research</a>
+  <a href="{{ '/partners/' | relative_url }}">Partners</a>
+</section>
 
-<h3>Events</h3>
-<style>
-  .event-item {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 1rem;
-    margin-bottom: 1.25rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #d9d9d9;
-  }
+<section class="home-pubs">
+  <div class="home-pubs__header">
+    <h3>Featured Publications</h3>
+    <a class="home-pubs__all" href="{{ '/publications/' | relative_url }}">View all publications</a>
+  </div>
+  <div class="home-pubs__list">
+    {% bibliography --query @* --max 3 %}
+  </div>
+</section>
 
-  .event-date {
-    font-weight: 700;
-    color: #1f3f66;
-    white-space: nowrap;
-  }
-
-  .event-deadline {
-    color: #b54747;
-    font-weight: 600;
-  }
-
-  @media (max-width: 700px) {
-    .event-item {
-      grid-template-columns: 1fr;
-      gap: 0.35rem;
-    }
-  }
-</style>
+<h3 id="events">Events</h3>
 {% assign latest_events = site.events | sort: "publication_date" | reverse | slice: 0, 3 %}
 {% if latest_events and latest_events.size > 0 %}
+  {% assign now_ts = 'now' | date: '%s' | plus: 0 %}
+  {% assign soon_window_seconds = 1209600 %}
+  {% assign soon_cutoff_ts = now_ts | plus: soon_window_seconds %}
+  <div class="event-list">
   {% for event in latest_events %}
     <div class="event-item">
       <div class="event-date">
@@ -54,6 +58,16 @@ classes: wide
       </div>
       <div>
         <strong>{{ event.title }}</strong><br>
+        {% if event.subscription_deadline %}
+          {% assign deadline_ts = event.subscription_deadline | date: '%s' | plus: 0 %}
+          {% if deadline_ts < now_ts %}
+            <span class="event-status event-status--closed">Closed</span><br>
+          {% elsif deadline_ts <= soon_cutoff_ts %}
+            <span class="event-status event-status--soon">Closing soon</span><br>
+          {% else %}
+            <span class="event-status event-status--open">Open</span><br>
+          {% endif %}
+        {% endif %}
         {% if event.subscription_deadline %}
           <span class="event-deadline">Deadline: {{ event.subscription_deadline | date: "%b %-d, %Y" }}</span><br>
         {% endif %}
@@ -68,9 +82,15 @@ classes: wide
       </div>
     </div>
   {% endfor %}
+  </div>
 {% else %}
   <p>No events published yet.</p>
 {% endif %}
 
 <h3>Contact</h3>
-Email: dosimetry.nl[at]gmail.com
+<section class="contact-card">
+  <p>
+    For collaborations, event participation, and scientific inquiries, contact the DCU team.<br>
+    Email: <a href="mailto:dosimetry.nl@gmail.com">dosimetry.nl@gmail.com</a>
+  </p>
+</section>
