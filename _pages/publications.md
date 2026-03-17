@@ -7,26 +7,33 @@ last_modified_at: 2026-03-17
 {% bibliography %}
 
 <script>
-// Convert DOI URLs to clickable links
+// Make DOI URLs clickable in the bibliography
 document.addEventListener('DOMContentLoaded', function() {
-  const doiRegex = /https:\/\/doi\.org\/([^\s<>,)]+)/g;
-  
-  function processNode(node) {
-    if (node.nodeType === Node.TEXT_NODE) {
-      const text = node.textContent;
-      if (doiRegex.test(text)) {
-        const span = document.createElement('span');
-        span.innerHTML = text.replace(doiRegex, '<a href="https://doi.org/$1" target="_blank" rel="noopener noreferrer">https://doi.org/$1</a>');
-        node.parentNode.replaceChild(span, node);
-      }
-    } else if (node.nodeType === Node.ELEMENT_NODE && node.nodeName !== 'A' && node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE') {
-      const children = Array.from(node.childNodes);
-      children.forEach(processNode);
+  // Find all text nodes in the bibliography and look for DOI URLs
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_TEXT,
+    null,
+    false
+  );
+
+  const nodesToReplace = [];
+  let node;
+  while (node = walker.nextNode()) {
+    if (node.textContent.match(/https?:\/\/doi\.org\/[^\s<>,)]+/)) {
+      nodesToReplace.push(node);
     }
   }
-  
-  const bibDiv = document.querySelector('.js-results-container') || document.querySelector('[role="main"]') || document.body;
-  processNode(bibDiv);
+
+  // Replace DOI text with clickable links
+  nodesToReplace.forEach(textNode => {
+    const span = document.createElement('span');
+    span.innerHTML = textNode.textContent.replace(
+      /(https?:\/\/doi\.org\/[^\s<>,)]+)/g,
+      '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+    );
+    textNode.parentNode.replaceChild(span, textNode);
+  });
 });
 </script>
 

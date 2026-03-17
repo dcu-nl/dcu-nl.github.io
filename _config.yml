@@ -281,7 +281,7 @@ whitelist:
 
 # Jekyll Scholar
 scholar:
-  style: ./_bibliography/apa-custom.csl
+  style: apa
   locale: en
   sort_by: year
   order: descending
