@@ -1,5 +1,13 @@
 <!-- start custom head snippets -->
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+{% if site.favicon %}
+	{% assign favicon_value = site.favicon | strip %}
+	{% if favicon_value contains "/" or favicon_value contains "." %}
+		<link rel="icon" href="{{ favicon_value | relative_url }}">
+	{% else %}
+		{% capture favicon_svg %}<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>{{ favicon_value }}</text></svg>{% endcapture %}
+		<link rel="icon" href="data:image/svg+xml,{{ favicon_svg | uri_escape }}">
+	{% endif %}
+{% endif %}
 
 <!-- end custom head snippets -->
