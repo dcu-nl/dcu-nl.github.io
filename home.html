@@ -47,9 +47,6 @@ classes: wide
       </div>
       <div class="event-content">
         <strong>{{ event.title }}</strong><br>
-        {% if display_event_date %}
-          <span class="event-actual-date">Event date: {{ display_event_date | date: "%b %-d, %Y" }}</span><br>
-        {% endif %}
         {% if event.subscription_deadline %}
           {% assign deadline_ts = event.subscription_deadline | date: '%s' | plus: 0 %}
           {% if deadline_ts < now_ts %}
