@@ -117,7 +117,7 @@ analytics:
 author:
   name             : "Dosimetry Core Unit"
   avatar           : #"/assets/images/dcu_logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Τhe DCU aims to support effective and safe radionuclide therapy for cancer patients."
+  bio              : "Τhe DCU aims to support collaborative dosimetry research to enable consistently effective and safe radionuclide therapy."
   location         : "Netherlands"
   email            : "dosimetry.nl@gmail.com"
   # fediverse       : "@you@instance.social"  # used for fediverse:creator meta tag
@@ -127,7 +127,7 @@ author:
       # url: "mailto:dosimetry.nl@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://www.radboudumc.nl/en/research/at-departmental-level/medical-imaging/dosimetry-core-unit"
+      # url: "https://www.radboudumc.nl/en/research/at-departmental-level/medical-imaging/dosimetry-core-unit"
     - label: "Twitter"
       icon: "fab fa-fw fa-square-x-twitter"
       # url: "https://twitter.com/"
