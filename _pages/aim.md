@@ -6,10 +6,7 @@ last_modified_at: 2026-03-17
 
 <section class="section-intro">
 	<p>
-		The Dosimetry Core Unit (DCU) supports safe and effective radionuclide therapy through
-		translational research across the full pathway from bench to bedside to community.
-
-        The goal of the Dosimetry Core Unit is to support effective and safe radionuclide therapy for cancer patients. To this aim, we perform translational research, covering the whole range from bench to bedside to community. 
+		The Dosimetry Core Unit (DCU) supports collaborative dosimetry research to enable consistently effective and safe radionuclide therapy. To this aim, we perform translational research, covering the whole range from bench to bedside to community. 
         
         Knowledge and expertise is used within the DCU to work on three important sub-goals:
 	</p>
