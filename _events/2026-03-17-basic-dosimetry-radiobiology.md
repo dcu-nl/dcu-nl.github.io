@@ -1,6 +1,7 @@
 ---
 title: "Summer Course: Basic Dosimetry and Radiobiology for Radionuclide Therapy"
 publication_date: 2026-03-17
+event_date: 2026-06-22
 subscription_deadline: 2026-05-15
 event_url: "https://www.ru.nl/en/education/education-for-professionals/overview/basic-dosimetry-and-radiobiology-for-radionuclide-therapy"
 excerpt: "Professional education course by Radboud University focused on dosimetry and radiobiology for radionuclide therapy."
