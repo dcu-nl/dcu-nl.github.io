@@ -15,7 +15,7 @@ last_modified_at: 2026-03-17
 	<article class="content-card">
 		<h3>Radboud University Medical Center</h3>
 		<p>Clinical and translational collaboration in molecular imaging and radionuclide therapy.</p>
-		<p><a href="https://www.radboudumc.nl/en/research/at-departmental-level/medical-imaging/dosimetry-core-unit" target="_blank" rel="noopener noreferrer">Visit RadboudUMC</a></p>
+		<p><a href="https://www.radboudumc.nl/en/research/at-departmental-level/medical-imaging" target="_blank" rel="noopener noreferrer">Visit RadboudUMC</a></p>
 	</article>
 
 	<article class="content-card">
@@ -39,6 +39,6 @@ last_modified_at: 2026-03-17
 	<article class="content-card">
 		<h3>Netherlands Cancer Institute</h3>
 		<p>Collaboration with the Netherlands Cancer Institute to strengthen cancer-focused research and translational impact.</p>
-		<p><a href="https://www.nki.nl/" target="_blank" rel="noopener noreferrer">Visit NKI</a></p>
+		<p><a href="https://www.nki.nl/research/research-groups/regina-beets-tan/" target="_blank" rel="noopener noreferrer">Visit NKI</a></p>
 	</article>
 </div>
