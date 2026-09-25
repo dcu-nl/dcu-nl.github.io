@@ -1,0 +1,35 @@
+---
+title: "SGeant4 Advanced Course 2026 @ CERN"
+publication_date: 2026-09-25
+event_date: 2026-11-02
+subscription_deadline: 2026-11-01
+event_url: "https://indico.cern.ch/e/geant4_advanced_course_2026"
+excerpt: "The 2026 Geant4 Advanced Course at CERN will be held from 2-6 November 2026 at the Training Amphitheatre in the CERN Meyrin site:"
+---
+
+The course will cover all key aspects of using the Geant4 toolkit in for any type of applications, including:
+  - how to create complex geometry setups, and tips for creating complicated shapes (solids);
+  - how to describe electromagnetic and other fields and adjust the accuracy of tracking particles in them;
+  - how to extract energy deposition and other observables in multiple ways;
+  - how to speed up simulation though use of cuts (secondary thresholds);
+  - exploring the use ‘event-biasing’ to suppress less important tracks (for appropriate applications);
+  - using ‘fast’ parameterisations (traditional or ML) in selected portions of a setup;
+  - adapting an applications for multi-threading;
+  - how to customise the user interface and create custom commands to configure your application.
+
+The course will also cover the physics capabilities and options of Geant4, to enable you to
+  - gain a first understanding of the physics model available (and their strengths and relative performance costs)
+  - understand the physics configuration options (key physics lists and their variants)
+  - navigate the process of choosing an appropriate physics list, and how to validate it (or find existing validation)
+  - identify alternative physics configurations (physics lists or parameter variation) for systematic studies.
+
+Extra emphasis will be paid to aspects most relevant to HEP and Nuclear Physics experiments, but most of the topics covered will be relevant for diverse application areas.
+
+Places for in person participation will be limited to 30. Some are reserved for CERN participants; the rest will be available on a first come, first serve basis. 
+Online participation (via Zoom) is also available.
+
+The cost to attend the course (for those involved in CERN or other HEP experiments or projects) are:
+ - via videoconference  50 Swiss Francs for employed in universities / HEP and 25 for students;
+ - in person it is 75 Swiss Francs for employed in universities / HEP and 50 for students.
+
+Registration is required.
