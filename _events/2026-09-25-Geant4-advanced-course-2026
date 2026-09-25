@@ -4,8 +4,8 @@ publication_date: 2026-09-25
 event_date: 2026-11-02
 subscription_deadline: 2026-11-01
 event_url: "https://indico.cern.ch/e/geant4_advanced_course_2026"
-excerpt: "The 2026 Geant4 Advanced Course will be held in hybrid form, both in person (limited) and online (unlimited), 
-on November 2-6, 2026 at the Training Amphitheatre in the CERN Meyrin site."
+excerpt: "The 2026 Geant4 Advanced Course will be held in hybrid form, both in person (limited participation) 
+and online (unlimited), on November 2-6, 2026 at the Training Amphitheatre in the CERN Meyrin site."
 ---
 
 The course will cover all key aspects of using the Geant4 toolkit in for any type of applications, including:
